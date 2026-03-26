@@ -1,11 +1,19 @@
 @import "tailwindcss";
-
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  color: white;
+  
+  height: 100vh;
 }
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.divid-line{
+  height: 1px;
+}
+
 
 .logo {
   height: 6em;
@@ -38,7 +46,6 @@
 .card {
   padding: 2em;
 }
-
 .read-the-docs {
   color: #888;
 }
