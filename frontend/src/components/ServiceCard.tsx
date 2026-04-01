@@ -1,19 +1,30 @@
 import heroImage from "../assets/lapataahero.jpeg";
-import { FaAnglesRight } from "react-icons/fa6";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { BsChevronDoubleRight } from "react-icons/bs";
 export default function ServiceCard() {
   return (
-    <div className=" bg-gray-50">
+    <div className=" bg-gray-50 relative w-full ">
       <div>
         <img
-          className="size-100 z-0 shrink-0 rounded-t-sm w-full h-40 object-cover brightness-90 dark:brightness-50"
+          className="size-100 z-0 shrink-0 rounded-t-sm w-full h-50 object-cover brightness-90 dark:brightness-50"
           src={heroImage}
           alt="icon"
-        />
+        ></img>
       </div>
-      <div className="bg-pink-900 font-bold p-4 flex justify-between text-gray-50 w-full">
-        <span>Economic Development </span>
-        <FaAnglesRight className="size-7" />
+      {/* Overlay */}
+      <div className="absolute w-full items-end px-2">
+        <div className="w-full -mt-18">
+          <MdOutlineHealthAndSafety className="size-10" />
+          <div className="w-full flex justify-between items-center text-white">
+            <span className=" font-bold text-lg px-2">
+              Economic Development{" "}
+            </span>
+            <BsChevronDoubleRight className="size-6 pt-1" />
+            {/*<FaAnglesRight className="size-7" />*/}
+          </div>
+        </div>
       </div>
+
       <div className="p-4 text-gray-900">
         Empowering local entrepreneurs to thrive.
       </div>

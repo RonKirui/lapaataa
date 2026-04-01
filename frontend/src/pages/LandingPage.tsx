@@ -1,9 +1,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import NavBar from "../components/NavBar";
-import Hero from "./Hero";
-import Services from "./Services";
-import About from "./About";
+import Hero from "../components/Hero";
+import Services from "../components/Services";
+import About from "../components/About";
+import CoreValues from "../components/CoreValues";
 
 AOS.init({
   duration: 600,
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <CoreValues />
     </div>
   );
 }
