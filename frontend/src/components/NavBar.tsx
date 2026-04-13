@@ -2,16 +2,17 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 import logo from "../assets/logo_maroon.png";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="fixed top-0 left-0 w-full bg-pink-900 z-5">
-      <nav className="flex flex-col lg:flex-row justify-between text-pink-900 mt-5 font-sans w-full items-center px-5 lg:px-30 py-1 bg-gray-100 shadow z-50">
+      <nav className="flex flex-col lg:flex-row justify-between text-pink-900 mt-5 font-sans w-full items-center px-5 lg:px-10 py-1 bg-gray-100 shadow z-50">
         <div className="flex w-full justify-between items-center">
-          <div>
+          <Link to={"/"}>
             <img className="h-15" src={logo} alt="Lapataa Foundation" />
-          </div>
+          </Link>
           {!isOpen && (
             <AiOutlineMenu
               className="size-8 lg:hidden"
@@ -45,9 +46,12 @@ export default function NavBar() {
               <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
                 Our Mission & Vision
               </div>
-              <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+              <Link
+                to={"/team"}
+                className="block text-left px-4 py-2 border-pink-900  hover:border-b-2"
+              >
                 Our Team
-              </div>
+              </Link>
               <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
                 Partnership
               </div>
@@ -107,8 +111,8 @@ export default function NavBar() {
           <div className="border-pink-900hover:border-b-2 p-2">Media</div>
           <div className="border-pink-900  hover:border-b-2 p-2">Careers</div>
           <div className="border-pink-900  hover:border-b-2 p-2">Contact</div>
-          <button className="border-pink-900  hover:border-b-2 text-gray-100 bg-pink-900 ">
-            Partnership
+          <button className="border-pink-900 whitespace-nowrap  hover:border-b-2 text-gray-100 bg-pink-900 ">
+            Join Us
           </button>
         </div>
         {isOpen && (
@@ -121,7 +125,7 @@ export default function NavBar() {
                 </span>
               </div>
               <div
-                className="absolute p-2 left-0 w-100 rounded
+                className="absolute p-2 left-0 rounded
                opacity-0 invisible bg-gray-100
                group-hover:opacity-100 group-hover:visible
                transition-all duration-200 font-sans text-sm text-pink-800  group-hover:relative"
@@ -197,7 +201,7 @@ export default function NavBar() {
               Contact Us
             </div>
             <button className="bg-pink-900 border-pink-900  hover:border-b-2 text-gray-100">
-              Partnership
+              Join Us
             </button>
           </div>
         )}

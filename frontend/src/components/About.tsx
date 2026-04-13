@@ -4,11 +4,11 @@ import missionImge from "../assets/mission_icon_white.png";
 export default function About() {
   return (
     <>
-      <div className=" mx-auto px-5 w-full flex flex-col lg:flex-row py-10 w-full gap-20 lg:px-30 text-gray-900">
+      <div className=" mx-auto px-5 w-full flex flex-col lg:flex-row py-10 w-full gap-20 lg:px-20 text-gray-900">
         <img
           src={heroImage}
           alt="image"
-          className="rounded-full w-full lg:w-1/3"
+          className="rounded-full hidden lg:block w-full lg:w-1/3"
         />
         <div className="w-full lg:w-2/3">
           <div className="text-5xl w-full text-pink-900 text-center pb-10 font-bold">

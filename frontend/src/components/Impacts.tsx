@@ -7,7 +7,7 @@ import heroImage from "../assets/lapataahero.jpeg";
 export default function Impacts() {
   return (
     <>
-      <div className="p-5 w-full bg-gray-200 lg:px-30 relative">
+      <div className="p-5 w-full bg-gray-200 lg:px-20 relative">
         <div className="w-full text-5xl p-10 font-sans text-center font-bold text-pink-900">
           Impacts & Awards
         </div>
@@ -144,7 +144,7 @@ export default function Impacts() {
           </div>
         </div>
       </div>
-      <div className="p-5 lg:px-30 bg-gray-50 ">
+      <div className="p-5 lg:px-20 bg-gray-50 ">
         <div className="w-full flex justify-between items-center">
           <div className="divid-line bg-gray-300 w-full"></div>
           <div className="w-full text-xl font-sans text-center font-bold text-pink-900">
@@ -153,10 +153,10 @@ export default function Impacts() {
           <div className="divid-line mb-2 bg-gray-300 w-full"></div>
         </div>
         <div className="mx-auto w-full py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-5 gap-4">
-          <div className="shadow-xl rounded-sm bg-gray-50 w-full ">
+          <div className="rounded-sm shadow-2xl rounded-br-4xl rounded-tl-4xl bg-gray-50 w-full ">
             <div>
               <img
-                className="size-100 z-0 shrink-0 rounded-t-sm w-full h-40 object-cover brightness-90 dark:brightness-50"
+                className="size-100 rounded-tl-4xl z-0 shrink-0 rounded-t-sm w-full h-40 object-cover brightness-90 dark:brightness-50"
                 src={heroImage}
                 alt="icon"
               ></img>
@@ -183,10 +183,10 @@ export default function Impacts() {
               </span>
             </div>
           </div>
-          <div className="shadow-xl rounded-sm bg-gray-50 w-full ">
+          <div className="rounded-sm shadow-2xl rounded-br-4xl rounded-tl-4xl bg-gray-50 w-full ">
             <div>
               <img
-                className="size-100 z-0 shrink-0 rounded-t-sm w-full h-40 object-cover brightness-90 dark:brightness-50"
+                className="size-100 z-0 shrink-0 rounded-tl-4xl w-full h-40 object-cover brightness-90 dark:brightness-50"
                 src={heroImage}
                 alt="icon"
               ></img>
@@ -213,10 +213,10 @@ export default function Impacts() {
               </span>
             </div>
           </div>
-          <div className="shadow-xl rounded-sm bg-gray-50 w-full ">
+          <div className="rounded-sm shadow-2xl rounded-br-4xl rounded-tl-4xl bg-gray-50 w-full ">
             <div>
               <img
-                className="size-100 z-0 shrink-0 rounded-t-sm w-full h-40 object-cover brightness-90 dark:brightness-50"
+                className="size-100 z-0 shrink-0 rounded-tl-4xl w-full h-40 object-cover brightness-90 dark:brightness-50"
                 src={heroImage}
                 alt="icon"
               ></img>

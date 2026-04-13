@@ -3,10 +3,10 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { BsChevronDoubleRight } from "react-icons/bs";
 export default function ServiceCard() {
   return (
-    <div className=" bg-gray-50 relative w-full ">
+    <div className=" bg-gray-50 rounded-sm shadow-2xl rounded-br-4xl rounded-tl-4xl relative w-full ">
       <div>
         <img
-          className="size-100 z-0 shrink-0 rounded-t-sm w-full h-50 object-cover brightness-90 dark:brightness-50"
+          className="size-100 z-0 shrink-0 rounded-tl-4xl w-full h-50 object-cover brightness-90 dark:brightness-50"
           src={heroImage}
           alt="icon"
         ></img>

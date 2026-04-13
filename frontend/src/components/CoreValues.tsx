@@ -5,7 +5,7 @@ import collaborationIcon from "../assets/lapaataa_collaboration_icon.png";
 import excellenceIcon from "../assets/lapaataa_excellence_icon.png";
 export default function CoreValues() {
   return (
-    <div className="px-5 py-20 w-full lg:px-30">
+    <div className="px-5 py-20 w-full lg:px-20">
       <div className="w-full text-5xl pb-15 font-sans text-center font-bold text-pink-900">
         Our Core Values
       </div>
