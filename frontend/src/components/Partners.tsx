@@ -17,7 +17,7 @@ import minoh from "../assets/ministryoh.png";
 
 export default function Partners() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-white">
       <div className="p-5 lg:p-10 w-full">
         {/* Pink-900 Fade Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-pink-900/80 to-transparent"></div>
@@ -35,21 +35,21 @@ export default function Partners() {
         </div>
         <div>
           <div className="border-gray-400 w-full grid grid-cols-3 lg:grid-cols-5 border-r-2xl gap-7 p-10 py-20 ">
-            <img className="w-full h-20 rounded-xl" src={kcbimage} />
-            <img className="w-full h-20 rounded-xl" src={uwezoimage} />
-            <img className="w-full h-20 rounded-xl" src={safaricom} />
-            <img className="w-full h-20 rounded-xl" src={youthaffairs} />
-            <img className="w-full h-20 rounded-xl" src={minilaborimg} />
-            <img className="w-full h-20 rounded-xl" src={imarishaimge} />
-            <img className="w-full h-20 rounded-xl" src={kimbilioimge} />
-            <img className="w-full h-20 rounded-xl" src={kipchimchimimg} />
-            <img className="w-full h-20 rounded-xl" src={everestimage} />
-            <img className="w-full h-20 rounded-xl" src={minioald} />
-            <img className="w-full h-20 rounded-xl" src={mobilehub} />
-            <img className="w-full h-20 rounded-xl" src={neaimg} />
-            <img className="w-full h-20 rounded-xl" src={youthenter} />
-            <img className="w-full h-20 rounded-xl" src={bometuni} />
-            <img className="w-full h-20 rounded-xl" src={minoh} />
+            <img className="w-full h-20 rounded-2xl" src={kcbimage} />
+            <img className="w-full h-20 rounded-2xl" src={uwezoimage} />
+            <img className="w-full h-20 rounded-2xl" src={safaricom} />
+            <img className="w-full h-20 rounded-2xl" src={youthaffairs} />
+            <img className="w-full h-20 rounded-2xl" src={minilaborimg} />
+            <img className="w-full h-20 rounded-3xl" src={imarishaimge} />
+            <img className="w-full h-20 rounded-2xl" src={kimbilioimge} />
+            <img className="w-full h-20 rounded-2xl" src={kipchimchimimg} />
+            <img className="w-full h-20 rounded-2xl" src={everestimage} />
+            <img className="w-full h-20 rounded-2xl" src={minioald} />
+            <img className="w-full h-20 rounded-2xl" src={mobilehub} />
+            <img className="w-full h-20 rounded-2xl" src={neaimg} />
+            <img className="w-full h-20 rounded-2xl" src={youthenter} />
+            <img className="w-full h-20 rounded-2xl" src={bometuni} />
+            <img className="w-full h-20 rounded-2xl" src={minoh} />
           </div>
         </div>
         <div className="bg-pink-900 p-4 py-10 lg:px-30 text-center flex flex-col gap-4 items-center">
