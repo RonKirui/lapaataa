@@ -4,8 +4,9 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import About from "../components/About";
 import CoreValues from "../components/CoreValues";
+//import Impacts from "../components/Impacts";
+//import Partners from "../components/Partners";
 import Impacts from "../components/Impacts";
-import Partners from "../components/Partners";
 
 AOS.init({
   duration: 600,
@@ -19,8 +20,8 @@ export default function Home() {
       <About />
       <Services />
       <CoreValues />
-      <Impacts />
-      <Partners />
+      <Impacts /> 
+      {/* <Partners /> */}
     </div>
   );
 }
