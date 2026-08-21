@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed z-1000 top-0 left-0 w-full bg-green-700">
-      <nav className="flex flex-col lg:flex-row justify-between text-green-700 mt-5 font-sans w-full items-center px-5 lg:px-10 py-1 bg-gray-100 shadow z-50">
+    <div className="fixed z-1000 top-0 left-0 w-full bg-green-800 shadow-lg">
+      <nav className="flex flex-col lg:flex-row justify-between text-black mt-5 font-sans w-full items-center px-5 lg:px-10 py-1 bg-gray-50 shadow z-50">
         <div className="flex w-full justify-between items-center">
           <Link to={"/"}>
             <img className="h-15" src={logo} alt="Lapataa Foundation" />
@@ -111,7 +111,7 @@ export default function NavBar() {
           <div className="border-pink-900hover:border-b-2 p-2">Media</div>
           <div className="border-pink-900  hover:border-b-2 p-2">Careers</div>
           <div className="border-pink-900  hover:border-b-2 p-2">Contact</div>
-          <button className="border-green-700 whitespace-nowrap  hover:border-b-2 text-gray-100 bg-orange-400 ">
+          <button className="border-green-700 whitespace-nowrap  hover:border-b-2 text-gray-100 bg-orange-600 ">
             Join Us
           </button>
         </div>

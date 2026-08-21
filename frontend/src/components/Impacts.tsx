@@ -1,7 +1,7 @@
-import empowerment from "../assets/lapaataa_youth_empowerment_icon.png";
-import health from "../assets/lapaataa_health_clinics_icon.png";
-import roads from "../assets/lapaataa_roads_icon.png";
-import scholarships from "../assets/lapaataa_scholarships_icon.png";
+import empowerment from "../assets/lapaataa_youth_empowerment_icon_green.png";
+import health from "../assets/lapaataa_health_clinics_icon_green.png";
+import roads from "../assets/lapaataa_roads_icon_green.png";
+import scholarships from "../assets/lapaataa_scholarships_icon_green.png";
 import heroImage from "../assets/lapataahero.jpeg";
 
 export default function Impacts() {
@@ -41,9 +41,9 @@ export default function Impacts() {
                 ></path>
               </svg>
               <img
-                src={empowerment}
+                src={roads}
                 className="float-end z-40 size-20"
-                alt="Empowerment"
+                alt="Roads"
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Impacts() {
               <img
                 src={roads}
                 className="float-end z-40 size-20"
-                alt="Empowerment"
+                alt="Roads"
               />
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Impacts() {
               <img
                 src={scholarships}
                 className="float-end z-40 size-20"
-                alt="Empowerment"
+                alt="Scholarships"
               />
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function Impacts() {
               <img
                 src={health}
                 className="float-end z-40 size-20"
-                alt="Empowerment"
+                alt="Health"
               />
             </div>
           </div>

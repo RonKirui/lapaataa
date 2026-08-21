@@ -18,8 +18,8 @@ export default function Home() {
     <div className="w-full">
       <Hero />
       <About />
-      <Services />
       <CoreValues />
+      <Services />
       <Impacts /> 
       {/* <Partners /> */}
     </div>

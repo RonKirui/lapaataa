@@ -4,22 +4,24 @@ import missionImge from "../assets/mission_icon_white.png";
 export default function About() {
   return (
     <>
-      <div className=" mx-auto px-5 w-full flex flex-col lg:flex-row py-10 w-full gap-20 lg:px-20 text-gray-900">
+      <div className="bg-gray-100 p-20 mx-auto px-5 w-full flex flex-col lg:flex-row py-10 mt-5 w-full gap-20 lg:px-20 text-gray-900">
         
-        <div className="w-full">
-          
-          <div className="bg-gray-50 flex mt-2 gap-3 cols-2">
-            <div className="p-2rounded-sm bg-gray-50">
-              <div className="flex gap-2 items-center">
+        <div className="w-full text-gray-900">
+
+          <div className=" flex mt-2 gap-3 cols-2">
+            <div className="p-2rounded-sm flex-1">
+              <div className="flex gap-5 px-5 border-r-2 border-gray-300 items-center">
                 <img
-                  className="size-15 p-1 bg-pink-900 rounded-full"
+                  className="size-25 p-1 bg-green-800 rounded-full"
                   src={missionImge}
                 />
                 <div className="w-full">
-                  <div className="text-2xl font-bold text-pink-900">
-                    Our Mission
-                  </div>
-                  <div className="divid-line bg-gray-500 w-full"></div>
+                  <p className="mb-4 font-semibold uppercase tracking-widest text-green-800">
+        Our Mission
+      </p>
+      <h2 className="text-xl text-gray-900 font-serif font-bold leading-[0.95]">
+        Empowering People, Transforming Communities.
+      </h2>
                   <div className="text-sm py-1 text-gray-500">
                     To empower communities through sustainable, holistic
                     programs in health, education, housing, climate-smart
@@ -30,17 +32,19 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="rounded-smborder-gray-900">
-              <div className="flex gap-2 items-center">
+            <div className="rounded-xl border-gray-900 flex-1">
+              <div className="flex px-5 gap-5 items-center">
                 <img
-                  className="size-15 p-1 bg-blue-800 rounded-full"
+                  className="size-25 p-1 bg-green-800 rounded-full"
                   src={visionImge}
                 />
                 <div className="w-full">
-                  <div className="text-2xl pt-2 font-bold text-blue-800">
-                    Our Vision
-                  </div>
-                  <div className="divid-line bg-gray-500 w-full"></div>
+                  <p className="mb-4 font-semibold uppercase tracking-widest text-green-800">
+        Our Vision
+      </p>
+      <h2 className="text-xl text-gray-900 font-serif font-bold leading-[0.95]">
+        A Thriving, Self-Reliant Society for All.
+      </h2>
                   <div className="text-gray-500 text-sm py-1">
                     Creating thriving, self-reliant communities where poverty is
                     eradicated and every individual lives a healthy, educated,
@@ -50,6 +54,7 @@ export default function About() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </>
