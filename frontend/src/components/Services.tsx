@@ -3,16 +3,28 @@ import ServiceCard from "./ServiceCard";
 export default function Services() {
   return (
     <>
-      <div className="p-5 lg:px-20 bg-gray-50 ">
-        <p className="mb-2 w-full text-center font-semibold uppercase tracking-widest text-green-800">
-        Our Areas of Focus
-      </p>
-      <p className="mb-8 w-full text-center text-sm text-black leading-[0.95]">
-        We are dedicated to creating lasting change in communities through our
-        comprehensive programs <br /> in health, education, housing, climate-smart
-        agriculture, and sports.
-      </p>
-        <div className="mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-5 gap-6">
+      <div className="p-5 lg:px-20 lg:py-20 bg-white">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-orange-600">
+            Our Areas of Focus
+          </p>
+
+          <h2
+            id="services-title"
+            className="font-serif text-4xl font-bold leading-tight text-green-950 sm:text-5xl"
+          >
+            Creating impact where it matters most.
+          </h2>
+
+          <div className="mx-auto mt-5 h-1 w-14 bg-orange-500" />
+
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600">
+            We create lasting change through comprehensive programs in health,
+            education, housing, climate-smart agriculture, sports, and economic
+            empowerment.
+          </p>
+        </div>
+        <div className="mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-14 items-center pb-5 gap-6">
           <ServiceCard />
           <ServiceCard />
           <ServiceCard />

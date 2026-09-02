@@ -1,112 +1,161 @@
 import heroImage from "../assets/lapataahero.jpeg";
-import empowerment from "../assets/lapaataa_youth_empowerment_icon_green.png";
-import health from "../assets/lapaataa_health_clinics_icon_green.png";
-import roads from "../assets/lapaataa_roads_icon_green.png";
-import scholarships from "../assets/lapaataa_scholarships_icon_green.png";
-import { FaArrowRight } from "react-icons/fa6";
-import { FaRegHandshake } from "react-icons/fa6";
+import { FaArrowRight, FaBell, FaCalendarDays, FaRegHandshake } from "react-icons/fa6";
 import data from "../data/data.json";
-import { useParams } from "react-router-dom";
+
+const upcomingEvents = [
+  {
+    id: 1,
+    date: "15",
+    month: "JUN",
+    title: "Community Health Outreach",
+    details: "Kaplong Community Centre · 9:00 AM",
+  },
+  {
+    id: 2,
+    date: "22",
+    month: "JUN",
+    title: "Youth Empowerment Forum",
+    details: "Konoin · Registration open",
+  },
+];
 
 export default function Hero() {
-
   return (
-    <div>
+    <section
+      id="home"
+      className="relative isolate overflow-hidden bg-green-950 text-white"
+      aria-labelledby="hero-title"
+    >
+      {/* Hero image */}
+      <img
+        src={heroImage}
+        alt="Community members working together to build a stronger future"
+        className="absolute inset-0 -z-20 h-full min-h-[860px] w-full object-cover object-center lg:min-h-[720px]"
+      />
 
-<section className="relative h-screen overflow-hidden bg-white border-b-2 border-gray-200 px-5">
+      {/* Responsive image overlay for readable text */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-green-950/75 via-green-950/55 to-green-950/95 sm:bg-gradient-to-r sm:from-white sm:via-white/95 sm:via-55% sm:to-green-950/10" />
 
-  {/* Background image */}
-  <img
-    src={heroImage}
-    alt="Community"
-    className="absolute inset-0 h-full w-full object-cover"
-  />
+      <div className="mx-auto flex min-h-[860px] max-w-7xl flex-col px-5 pb-8 pt-28 sm:px-8 lg:min-h-[720px] lg:px-20 lg:pb-32 lg:pt-36">
+        <div className="max-w-2xl">
+          <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-orange-400 sm:text-sm sm:text-orange-600">
+            <span className="h-px w-10 bg-orange-500" />
+            Building Stronger Communities in Kenya
+          </p>
 
-  {/* White fade over the image */}
-  <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
-
-  {/* Content */}
-  <div className="relative z-10 mx-auto max-w-7xl px-6 py-28">
-    <div className="max-w-xl">
-      <p className="mb-3 font-semibold uppercase tracking-widest text-orange-600 border-l-5 border-green-800 pl-2">
-        Building Stronger Communities in Kenya
-      </p>
-
-      <h1 className="text-6xl text-green-800 font-serif font-bold leading-[0.95]">
-        Inspire,
-        <br />
-        Empower,
-        <br />
-        <span className="text-green-800">Transform.</span>
-      </h1>
-
-      <p className="mt-6 max-w-lg leading-8 text-gray-700">
-        We create lasting change by investing in people,
-        infrastructure, and opportunities that uplift
-        communities and build a stronger tomorrow.
-      </p>
-    </div>
-    
-<div className="absolute mt-5 flex gap-x-4">
-  {/* Primary Button */}
-  <p className="transform rounded-xl bg-orange-600 px-6 py-3 text-lg font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-orange-700">
-    Join Our Cause
-    
-            <FaRegHandshake className="inline ml-2 size-8" />
-  </p>
-
-  {/* Secondary (Outlined) Button */}
-  <p className="transform rounded-xl border-1 border-green-800 bg-transparent px-6 py-3 text-lg font-semibold text-green-800 transition duration-300 hover:scale-105 hover:bg-green-800 hover:text-white">
-    Explore Programs
-    
-            <FaArrowRight className="inline ml-2 size-6" />
-  </p>
-</div>
-
-  
-  </div>
-
-</section>
-      {/*<div
-        className="w-full min-h-screen relative bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="text-5xl w-full text-pink-900 text-center pb-10 font-bold">
-            Inspire, Empower, Transform
-          </div>
-          <div className="">
-            Lapaataa Foundation was established to bring hope and support to
-            Kenya, specifically Konoin Constituency's missing and vulnerable.
-            Founded by Hon. Brighton Yegon, MP for Konoin, our aim is to reunite
-            families, assist those in need, and create a safer community for
-            all.
+          <h1
+            id="hero-title"
+            className="max-w-xl font-serif text-5xl font-bold leading-[0.95] text-white sm:text-6xl lg:text-7xl lg:text-green-950"
+          >
+            Inspire.
             <br />
+            Empower.
             <br />
-            We are dedicated to providing resources, advocacy, and care for the
-            lost and destitute. Our Vision is a society where no one is
-            forgotten, and every person is valued and protected.
-          </div>
-        //<div className="absolute inset-0 bg-black/60"></div>
-        <div className="w-full"></div>
-      </div>**/}
-<div className="w-full absolute -bottom-15 flex justify-center p-2 opacity-100"><div className="rounded p-1"><div className="text-black flex items-center justify-center">
-        <div className="flex gap-x-5">
-          {data.impacts.map((impact) => (<div className="flex flex-1 bg-stone-100 border-1 border-gray-200 py-5 rounded-xl shadow-lg pr-5">
-            <img
-                src={impact.icon}
-                className="float-end z-40 size-20"
-                alt="Empowerment"
-              />
-              <div className="ml-2">
-                <p className="text-2xl font-bold text-green-800">{impact.title}</p>
-                <p className="text-sm mt-2 font-semibold">{impact.subtitle}</p>
-                <p className="text-xs">{impact.description}</p>
-              </div>
-            </div>))}
+            <span className="text-orange-400 lg:text-green-900">Transform.</span>
+          </h1>
 
-        </div></div>
-        </div></div>
-      
-    </div>
+          <p className="mt-7 max-w-xl text-base leading-7 text-green-50 sm:text-lg lg:text-gray-700">
+            We create lasting change by investing in people, infrastructure,
+            and opportunities that uplift communities and build a stronger
+            tomorrow.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="text-white inline-flex items-center justify-center gap-3 rounded-lg bg-orange-600 px-6 py-3.5 text-base font-bold text-white shadow-lg shadow-orange-950/20 transition hover:-translate-y-0.5 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-green-950 lg:focus:ring-offset-white">
+              Join Our Cause
+              <FaRegHandshake aria-hidden="true" className="text-xl" />
+            </div>
+
+            <div className="text-white inline-flex items-center justify-center gap-3 rounded-lg border-2 border-white/80 bg-white/10 px-6 py-3 text-base font-bold text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white hover:text-green-900 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 lg:border-green-900 lg:bg-transparent lg:text-green-900 lg:hover:bg-green-900 lg:hover:text-white">
+              Explore Programs
+              <FaArrowRight aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+
+        {/* Added events / notifications panel. The existing design is unchanged. */}
+        <aside
+          className="relative right-auto top-auto z-20 mt-8 block w-full overflow-hidden rounded-xl border border-white/30 bg-green-950/95 p-4 text-white shadow-2xl backdrop-blur-md sm:absolute sm:right-8 sm:top-8 sm:mt-0 sm:w-72 lg:right-10 lg:top-32"
+          aria-labelledby="hero-events-title"
+        >
+          <div className="flex items-center justify-between border-b border-white/20 pb-3">
+            <div className="flex items-center gap-2">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-600">
+                <FaBell aria-hidden="true" className="text-sm" />
+              </span>
+              <h2 id="hero-events-title" className="text-sm font-bold">
+                Upcoming Events
+              </h2>
+            </div>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-orange-300">
+              Updates
+            </span>
+          </div>
+
+          <div className="mt-3 space-y-3">
+            {upcomingEvents.map((event) => (
+              <p
+                key={event.id}
+                className="flex gap-3 rounded-lg p-2 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              >
+                <span className="flex h-11 w-11 shrink-0 flex-col items-center justify-center rounded-md bg-white text-green-950">
+                  <FaCalendarDays aria-hidden="true" className="text-orange-600" />
+                  <span className="text-sm font-bold leading-none">{event.date}</span>
+                  <span className="text-[9px] font-bold">{event.month}</span>
+                </span>
+                <span className="min-w-0">
+                  <span className="block text-sm font-semibold leading-5">
+                    {event.title}
+                  </span>
+                  <span className="mt-1 block text-xs leading-4 text-green-100/75">
+                    {event.details}
+                  </span>
+                </span>
+              </p>
+            ))}
+          </div>
+
+          <p
+            className="mt-2 inline-flex items-center gap-2 border-t border-white/20 pt-3 text-xs font-bold text-orange-300 hover:text-orange-200"
+          >
+            View all events
+            <FaArrowRight aria-hidden="true" />
+          </p>
+        </aside>
+
+        {/* Impact status cards */}
+        <div className="mt-auto pt-14 lg:pt-20">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-gray-300/70 lg:rounded-xl lg:border lg:border-gray-200 lg:bg-white/95 lg:px-2 lg:py-2 lg:shadow-2xl lg:backdrop-blur-md">
+            {data.impacts.map((impact) => (
+              <article
+                key={impact.id}
+                className="flex items-center gap-4 rounded-xl border border-white/20 bg-white/95 p-4 text-gray-900 shadow-lg backdrop-blur-md sm:p-5 lg:rounded-none lg:border-0 lg:bg-transparent lg:shadow-none"
+              >
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-green-100 p-2.5 text-green-900">
+                  <img
+                    src={impact.icon}
+                    alt=""
+                    aria-hidden="true"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+
+                <div className="min-w-0">
+                  <p className="font-serif text-3xl font-bold leading-none text-green-900">
+                    {impact.title}
+                  </p>
+                  <p className="mt-1 text-sm font-bold capitalize text-gray-900">
+                    {impact.subtitle}
+                  </p>
+                  <p className="mt-1 text-xs leading-5 text-gray-500">
+                    {impact.description}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

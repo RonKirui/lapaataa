@@ -7,6 +7,8 @@ import CoreValues from "../components/CoreValues";
 //import Impacts from "../components/Impacts";
 //import Partners from "../components/Partners";
 import Impacts from "../components/Impacts";
+import Banner from "../components/Banner";
+import Partners from "../components/Partners";
 
 AOS.init({
   duration: 600,
@@ -20,8 +22,9 @@ export default function Home() {
       <About />
       <CoreValues />
       <Services />
-      <Impacts /> 
-      {/* <Partners /> */}
+      <Banner />
+      <Partners />
+      {/* <Impacts /> */}
     </div>
   );
 }

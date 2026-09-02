@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed z-1000 top-0 left-0 w-full bg-green-800 shadow-lg">
+    <div className="fixed z-1000 top-0 left-0 w-full bg-green-950/90 shadow-lg">
       <nav className="flex flex-col lg:flex-row justify-between text-black mt-5 font-sans w-full items-center px-5 lg:px-10 py-1 bg-gray-50 shadow z-50">
         <div className="flex w-full justify-between items-center">
           <Link to={"/"}>
@@ -38,21 +38,21 @@ export default function NavBar() {
               className="absolute p-2 mt-3 left-0 mt-5 w-60 shadow-lg rounded
                opacity-0 invisible bg-gray-100
                group-hover:opacity-100 group-hover:visible
-               transition-all duration-200 font-sans text-sm text-pink-800"
+               transition-all duration-200 font-sans text-sm text-black"
             >
-              <div className="block text-left text-pink-900 border-pink-900 px-4 py-2 hover:border-b-2">
+              <div className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
                 About Us
               </div>
-              <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+              <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                 Our Mission & Vision
               </div>
               <Link
                 to={"/team"}
-                className="block text-left px-4 py-2 border-pink-900  hover:border-b-2"
+                className="block text-left px-4 py-2 border-green-800  hover:border-b-2"
               >
                 Our Team
               </Link>
-              <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+              <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                 Partnership
               </div>
             </div>
@@ -68,21 +68,21 @@ export default function NavBar() {
               className="absolute  bg-gray-100 p-2 mt-3 left-0 mt-5 w-60 shadow-lg rounded
                opacity-0 invisible
                group-hover:opacity-100 group-hover:visible
-               transition-all duration-200 font-sans text-sm text-pink-800"
+               transition-all duration-200 font-sans text-sm text-black"
             >
-              <div className=" text-left  block text-pink-900 border-pink-900 px-4 py-2 hover:border-b-2">
+              <div className=" text-left  block text-black border-green-800 px-4 py-2 hover:border-b-2">
                 Health
               </div>
-              <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+              <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                 Education
               </div>
-              <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+              <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                 Housing
               </div>
-              <div className="block px-4 text-left py-2 border-pink-900  hover:border-b-2">
+              <div className="block px-4 text-left py-2 border-green-800  hover:border-b-2">
                 Climate Smart Agriculture
               </div>
-              <div className="block px-4 text-left  py-2 border-pink-900  hover:border-b-2">
+              <div className="block px-4 text-left  py-2 border-green-800  hover:border-b-2">
                 Youth Empowerment
               </div>
             </div>
@@ -98,19 +98,19 @@ export default function NavBar() {
               className="absolute p-2 mt-3 left-0 mt-5 w-60 shadow-lg rounded
                opacity-0 invisible bg-gray-100
                group-hover:opacity-100 group-hover:visible
-               transition-all duration-200 font-sans text-sm text-pink-800"
+               transition-all duration-200 font-sans text-sm text-black"
             >
-              <div className="block text-left   px-4 py-2 border-pink-900  hover:border-b-2">
+              <div className="block text-left   px-4 py-2 border-green-800  hover:border-b-2">
                 Upcoming Events
               </div>
-              <div className="block text-left   px-4 py-2 border-pink-900  hover:border-b-2">
+              <div className="block text-left   px-4 py-2 border-green-800  hover:border-b-2">
                 Past Events
               </div>
             </div>
           </div>
-          <div className="border-pink-900hover:border-b-2 p-2">Media</div>
-          <div className="border-pink-900  hover:border-b-2 p-2">Careers</div>
-          <div className="border-pink-900  hover:border-b-2 p-2">Contact</div>
+          <div className="border-green-800 hover:border-b-2 p-2">Media</div>
+          <div className="border-green-800  hover:border-b-2 p-2">Careers</div>
+          <div className="border-green-800  hover:border-b-2 p-2">Contact</div>
           <button className="border-green-700 whitespace-nowrap  hover:border-b-2 text-gray-100 bg-orange-600 ">
             Join Us
           </button>
@@ -128,18 +128,18 @@ export default function NavBar() {
                 className="absolute p-2 left-0 rounded
                opacity-0 invisible bg-gray-100
                group-hover:opacity-100 group-hover:visible
-               transition-all duration-200 font-sans text-sm text-pink-800  group-hover:relative"
+               transition-all duration-200 font-sans text-sm text-black group-hover:relative"
               >
-                <div className="block text-left text-pink-900 border-pink-900 px-4 py-2 hover:border-b-2">
+                <div className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
                   About Us
                 </div>
-                <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+                <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                   Our Mission & Vision
                 </div>
-                <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+                <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                   Our Team
                 </div>
-                <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+                <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                   Partnership
                 </div>
               </div>
@@ -155,21 +155,21 @@ export default function NavBar() {
                 className="absolute p-2 left-0 w-full rounded
                opacity-0 invisible bg-gray-100
                group-hover:opacity-100 group-hover:visible
-               transition-all duration-200 font-sans text-sm text-pink-800 group-hover:relative"
+               transition-all duration-200 font-sans text-sm text-black group-hover:relative"
               >
-                <div className=" text-left  block text-pink-900 border-pink-900 px-4 py-2 hover:border-b-2">
+                <div className=" text-left  block text-black border-green-800 px-4 py-2 hover:border-b-2">
                   Health
                 </div>
-                <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+                <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                   Education
                 </div>
-                <div className="block text-left px-4 py-2 border-pink-900  hover:border-b-2">
+                <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
                   Housing
                 </div>
-                <div className="block px-4 text-left py-2 border-pink-900  hover:border-b-2">
+                <div className="block px-4 text-left py-2 border-green-800  hover:border-b-2">
                   Climate Smart Agriculture
                 </div>
-                <div className="block px-4 text-left  py-2 border-pink-900  hover:border-b-2">
+                <div className="block px-4 text-left  py-2 border-green-800  hover:border-b-2">
                   Youth Empowerment
                 </div>
               </div>
@@ -185,22 +185,22 @@ export default function NavBar() {
                 className="absolute p-2 left-0 w-full
                opacity-0 invisible bg-gray-100
                group-hover:opacity-100 group-hover:visible
-               transition-all duration-200 font-sans text-sm text-pink-800 group-hover:relative"
+               transition-all duration-200 font-sans text-sm text-black group-hover:relative"
               >
-                <div className="block text-left   px-4 py-2 border-pink-900  hover:border-b-2">
+                <div className="block text-left   px-4 py-2 border-green-800  hover:border-b-2">
                   Upcoming Events
                 </div>
-                <div className="block text-left   px-4 py-2 border-pink-900  hover:border-b-2">
+                <div className="block text-left   px-4 py-2 border-green-800  hover:border-b-2">
                   Past Events
                 </div>
               </div>
             </div>
-            <div className="border-pink-900hover:border-b-2 p-2">Media</div>
-            <div className="border-pink-900  hover:border-b-2 p-2">Careers</div>
-            <div className="border-pink-900  hover:border-b-2 p-2">
+            <div className="border-green-800  hover:border-b-2 p-2">Media</div>
+            <div className="border-green-800  hover:border-b-2 p-2">Careers</div>
+            <div className="border-green-800  hover:border-b-2 p-2">
               Contact Us
             </div>
-            <button className="bg-orange-400 border-pink-900  hover:border-b-2 text-gray-100">
+            <button className="bg-orange-600 border-green-800  hover:border-b-2 text-gray-100">
               Join Us
             </button>
           </div>

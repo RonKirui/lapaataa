@@ -3,27 +3,27 @@
     "title":"5000",
     "subtitle":"Youths Empowered",
     "description":"Through programss & mentorship",
-    "icon":"empowerment"
+    "icon":"/public_assets/lapaataa_health_clinics_icon_green.png"
 },
 {
     "id":2,
     "title":"20km+",
     "subtitle":"Roads Constructed",
     "description":"Connecting communities",
-    "icon":"roads"
+    "icon":"/public_assets/lapaataa_roads_icon_green.png"
 },
 {
     "id":3,
     "title":"500+",
     "subtitle":"Scholarships Aided",
     "description":"Investing in bright futures",
-    "icon":"scholarships"
+    "icon":"/public_assets/lapaataa_scholarships_icon_green.png"
 },
 {
     "id":4,
     "title":"10+",
     "subtitle":"Clinics supported",
     "description":"Providing essential healthcare",
-    "icon":"health"
+    "icon":"/public_assets/lapaataa_health_clinics_icon_green.png"
 }
 ]}
