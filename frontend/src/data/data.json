@@ -26,4 +26,48 @@
     "description":"Providing essential healthcare",
     "icon":"/public_assets/lapaataa_health_clinics_icon_green.png"
 }
+],
+"programs":[{
+    "id":1,
+    "img":"/public_assets/economic_img1.jpg",
+    "title":"Economic Development",
+    "description":"We support initiatives that promote economic growth, job creation, and financial stability in communities.",
+    "icon":"MdOutlineHealthAndSafety"
+},
+{
+    "id":2,
+    "img":"/public_assets/road_img1.jpg",
+    "title":"Infrastructure Development",
+    "description":"We support the development of essential infrastructure, such as roads, bridges, and public facilities, to improve community connectivity and quality of life.",
+    "icon":"MdOutlineEducation"
+},
+{
+    "id":3,
+    "img":"/public_assets/youthempo_img.jpg",
+    "title":"Youth Empowerment",
+    "description":"We provide mentorship and skill development programs to empower young people and support their personal and professional growth.",
+    "icon":"MdOutlineHome"
+},
+{
+    "id":4,
+    "img":"/public_assets/education_img2.jpg",
+    "title":"Education & Literacy",
+    "description":"We support educational initiatives, including scholarships, literacy programs, and access to quality education for children and adults.",
+    "icon":"MdOutlineAgriculture"
+},
+{
+    "id":5,
+    "img":"/public_assets/health_img.jpg",
+    "title":"Health & Wellness",
+    "description":"We support healthcare initiatives, including clinics, health education, and wellness programs to improve the overall health of communities.",
+    "icon":"MdOutlinePeople"
+},
+{
+    "id":6,
+    "img":"/public_assets/smartagr_img.jpg",
+    "title":"Agriculture & Food Security",
+    "description":"We support sustainable farming practices to improve food security and environmental resilience.",
+    "icon":"MdOutlineAgriculture"
+}
+
 ]}

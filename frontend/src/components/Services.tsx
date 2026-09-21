@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 export default function Services() {
   return (
     <>
-      <div className="p-5 lg:px-20 lg:py-20 bg-white">
+      <div className="p-5 lg:px-20 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-orange-600">
             Our Areas of Focus
@@ -24,14 +24,7 @@ export default function Services() {
             empowerment.
           </p>
         </div>
-        <div className="mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-14 items-center pb-5 gap-6">
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-        </div>
+        <ServiceCard />
       </div>
     </>
   );

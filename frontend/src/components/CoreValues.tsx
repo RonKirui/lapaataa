@@ -106,7 +106,7 @@ export default function CoreValuesSlider() {
   return (
     <section
       id="core-values"
-      className="w-full overflow-hidden bg-gray-50 px-5 py-20 text-gray-900 sm:px-8 lg:px-20 lg:py-20"
+      className="w-full overflow-hidden bg-white px-5 py-20 text-gray-900 sm:px-8 lg:px-20 lg:py-20"
       aria-labelledby="core-values-title"
     >
       <div className="mx-auto max-w-7xl">

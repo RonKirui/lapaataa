@@ -73,9 +73,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Added events / notifications panel. The existing design is unchanged. */}
+        {/* events / notifications panel*/}
         <aside
-          className="relative right-auto top-auto z-20 mt-8 block w-full overflow-hidden rounded-xl border border-white/30 bg-green-950/95 p-4 text-white shadow-2xl backdrop-blur-md sm:absolute sm:right-8 sm:top-8 sm:mt-0 sm:w-72 lg:right-10 lg:top-32"
+          className="relative right-auto top-auto z-20 mt-8 block w-full hover:lg:scale-105 lg:transition lg:duration-500 overflow-hidden rounded-xl border border-white/30 bg-green-950/95 p-4 text-white shadow-2xl backdrop-blur-md sm:absolute sm:right-8 sm:top-8 sm:mt-0 sm:w-72 lg:right-10 lg:top-32"
           aria-labelledby="hero-events-title"
         >
           <div className="flex items-center justify-between border-b border-white/20 pb-3">
@@ -124,7 +124,7 @@ export default function Hero() {
         </aside>
 
         {/* Impact status cards */}
-        <div className="mt-auto pt-14 lg:pt-20">
+        <div className="mt-auto pt-14 lg:pt-20 hover:lg:translate-y-10 lg:transition lg:duration-500">
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-gray-300/70 lg:rounded-xl lg:border lg:border-gray-200 lg:bg-white/95 lg:px-2 lg:py-2 lg:shadow-2xl lg:backdrop-blur-md">
             {data.impacts.map((impact) => (
               <article

@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
-import logo from "../assets/logo_maroon.png";
+import logo from "../assets/Lapaataa_logo_green.png";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed z-1000 top-0 left-0 w-full bg-green-950/90 shadow-lg">
+    <div className="fixed z-1000 top-0 left-0 w-full bg-green-800 shadow-lg">
       <nav className="flex flex-col lg:flex-row justify-between text-black mt-5 font-sans w-full items-center px-5 lg:px-10 py-1 bg-gray-50 shadow z-50">
         <div className="flex w-full justify-between items-center">
           <Link to={"/"}>
@@ -40,21 +40,21 @@ export default function NavBar() {
                group-hover:opacity-100 group-hover:visible
                transition-all duration-200 font-sans text-sm text-black"
             >
-              <div className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
+              <a href="#about" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
                 About Us
-              </div>
-              <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
-                Our Mission & Vision
-              </div>
-              <Link
-                to={"/team"}
-                className="block text-left px-4 py-2 border-green-800  hover:border-b-2"
-              >
-                Our Team
-              </Link>
-              <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
+              </a>
+              <a href="#core-values" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
+                Our Core Values
+              </a>
+                <a href="#latest-news" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
+                  Latest News
+                </a>
+              <a href="#partnership" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
                 Partnership
-              </div>
+              </a>
+              <a href="#awards-recognition" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
+                Awards & Recognition
+              </a>
             </div>
           </div>
           <div className="relative group hover:border-b-3 p-2">
@@ -110,7 +110,9 @@ export default function NavBar() {
           </div>
           <div className="border-green-800 hover:border-b-2 p-2">Media</div>
           <div className="border-green-800  hover:border-b-2 p-2">Careers</div>
-          <div className="border-green-800  hover:border-b-2 p-2">Contact</div>
+          <a href="#contact" className="border-green-800  hover:border-b-2 p-2">
+            Contact
+          </a>
           <button className="border-green-700 whitespace-nowrap  hover:border-b-2 text-gray-100 bg-orange-600 ">
             Join Us
           </button>
@@ -130,18 +132,21 @@ export default function NavBar() {
                group-hover:opacity-100 group-hover:visible
                transition-all duration-200 font-sans text-sm text-black group-hover:relative"
               >
-                <div className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
+                <a href="#about" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
                   About Us
-                </div>
-                <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
-                  Our Mission & Vision
-                </div>
-                <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
-                  Our Team
-                </div>
-                <div className="block text-left px-4 py-2 border-green-800  hover:border-b-2">
+                </a>
+                <a href="#core-values" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
+                  Our Core Values
+                </a>
+                <a href="#latest-news" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
+                  Latest News
+                </a>
+                <a href="#partnership" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
                   Partnership
-                </div>
+                </a>
+                <a href="#awards-recognition" className="block text-left text-black border-green-800 px-4 py-2 hover:border-b-2">
+                  Awards & Recognition
+                </a>
               </div>
             </div>
             <div className="relative group hover:border-b-3 p-2">

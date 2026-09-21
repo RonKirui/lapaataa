@@ -84,15 +84,15 @@ export default function About() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-4 border-t border-gray-200 pt-8 text-center sm:grid-cols-3">
-          <div>
+          <div className="hover:lg:translate-y-1 lg:transition lg:duration-500">
             <p className="font-serif text-3xl font-bold text-green-900">People</p>
             <p className="mt-1 text-sm text-gray-500">At the heart of our work</p>
           </div>
-          <div>
+          <div className="hover:lg:translate-y-1 lg:transition lg:duration-500">
             <p className="font-serif text-3xl font-bold text-green-900">Partnership</p>
             <p className="mt-1 text-sm text-gray-500">Strengthening collective action</p>
           </div>
-          <div>
+          <div className="hover:lg:translate-y-1 lg:transition lg:duration-500">
             <p className="font-serif text-3xl font-bold text-green-900">Progress</p>
             <p className="mt-1 text-sm text-gray-500">Measured through lasting impact</p>
           </div>

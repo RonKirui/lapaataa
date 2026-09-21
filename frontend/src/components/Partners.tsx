@@ -42,19 +42,25 @@ export default function Partners() {
 
   return (
     <section className="w-full bg-white">
-      <div className="w-full px-5 py-12 lg:px-20 lg:py-20">
-        <p className="mb-4 w-full text-center text-sm font-bold uppercase tracking-[0.2em] text-orange-600">
+      <div className="w-full px-5 sm:px-20 py-12 lg:pt-20">
+        <p className="mb-4 text-sm text-center font-bold uppercase tracking-[0.2em] text-orange-600">
             Our Partners
           </p>
 
-        <h2 className="mx-auto max-w-3xl text-center font-serif text-3xl font-semibold text-green-950 md:text-5xl">
-          Strong Partnerships. Sustainable Change.
-        </h2>
+          <h2
+            id="core-values-title"
+            className="mx-auto max-w-3xl text-center font-serif text-3xl font-semibold text-green-950 md:text-5xl"
+          >
+            Strong Partnerships. Sustainable Change.
+          </h2>
 
-        <p className="mx-auto mb-10 mt-5 max-w-2xl text-center text-sm leading-6 text-gray-600 md:text-base">
-          We are proud to collaborate with a diverse network of partners who
+          <div className="mx-auto mt-5 h-1 w-14 bg-orange-500" />
+
+          <p className="mx-auto mb-10 mt-5 max-w-2xl text-center text-sm leading-6 text-gray-600 md:text-base">
+            We are proud to collaborate with a diverse network of partners who
           share our vision for positive change and community development.
-        </p>
+          </p>
+        
 
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
           {visiblePartners.map((partner) => (
@@ -87,34 +93,79 @@ export default function Partners() {
           </button>
         </div>
 
-        <p className="mx-auto mb-10 mt-12 max-w-2xl text-center text-sm leading-6 text-gray-600">
+        <p className="mx-auto max-w-2xl text-center text-sm leading-6 text-gray-600">
           We are grateful for the support and collaboration of our partners,
           whose contributions enable us to make a meaningful impact in the
           communities we serve.
         </p>
 
-        <div className="flex flex-col items-center gap-5 bg-green-900 px-6 py-12 text-center text-white lg:px-30">
-          <div className="flex w-full items-center gap-4">
-            <div className="h-px flex-1 bg-green-300/60" />
-            <h3 className="whitespace-nowrap text-xl font-semibold">
-              Partner With Us
-            </h3>
-            <div className="h-px flex-1 bg-green-300/60" />
-          </div>
-
-          <p className="max-w-xl text-sm leading-6 text-green-50">
-            Join us in making a difference. Lets work together for a
-            better tomorrow.
-          </p>
-
-          <button
-            type="button"
-            className="rounded-md bg-orange-500 px-8 py-3 font-semibold text-white transition hover:bg-orange-600"
-          >
-            Get In Touch
-          </button>
-        </div>
+    
       </div>
+       <section className="relative isolate overflow-hidden bg-green-950 px-5 py-16 text-white sm:px-8 lg:px-20 lg:py-20">
+  {/* Decorative background shapes */}
+  <div
+    aria-hidden="true"
+    className="absolute -right-24 -top-24 -z-10 h-72 w-72 rounded-full border border-green-400/20"
+  />
+  <div
+    aria-hidden="true"
+    className="absolute -bottom-32 -left-24 -z-10 h-80 w-80 rounded-full border border-orange-400/20"
+  />
+  <div
+    aria-hidden="true"
+    className="absolute left-1/2 top-0 -z-10 h-full w-px bg-white/5"
+  />
+
+  <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
+    {/* Eyebrow */}
+    <div className="mb-5 flex items-center gap-4 text-xs font-bold uppercase tracking-[0.25em] text-orange-300 sm:text-sm">
+      <span className="h-px w-10 bg-orange-400" aria-hidden="true" />
+      Partnership
+      <span className="h-px w-10 bg-orange-400" aria-hidden="true" />
+    </div>
+
+    {/* Heading */}
+    <h2 className="max-w-2xl font-serif text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+      Partner With Us to Create Lasting Impact
+    </h2>
+
+    <div
+      aria-hidden="true"
+      className="mt-6 h-1 w-16 rounded-full bg-orange-500"
+    />
+
+    {/* Description */}
+    <p className="mt-6 max-w-2xl text-base leading-7 text-green-100/80 sm:text-lg">
+      Join us in empowering communities, expanding opportunity, and building a
+      stronger, more resilient future for Kenya. Together, we can turn shared
+      purpose into measurable change.
+    </p>
+
+    {/* Actions */}
+    <div className="mt-9 flex w-full flex-col justify-center gap-4 sm:w-auto sm:flex-row">
+      <a
+        href="/partner-with-us"
+        className="inline-flex items-center justify-center gap-3 rounded-lg bg-orange-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-orange-950/20 transition duration-300 hover:-translate-y-1 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2 focus:ring-offset-green-950"
+      >
+        Get In Touch
+        <span aria-hidden="true" className="text-lg">→</span>
+      </a>
+
+      <a
+        href="/our-work"
+        className="inline-flex items-center justify-center gap-3 rounded-lg border border-white/40 px-7 py-3.5 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-950"
+      >
+        Explore Our Work
+      </a>
+    </div>
+
+    {/* Trust statement */}
+    <p className="mt-8 text-xs uppercase tracking-[0.16em] text-green-200/60">
+      Government · Corporate · NGO · Community Partners
+    </p>
+  </div>
+</section>
+
     </section>
   );
 }
