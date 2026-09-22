@@ -61,15 +61,15 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <div className="text-white inline-flex items-center justify-center gap-3 rounded-lg bg-orange-600 px-6 py-3.5 text-base font-bold text-white shadow-lg shadow-orange-950/20 transition hover:-translate-y-0.5 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-green-950 lg:focus:ring-offset-white">
+            <a href="#contact" className="text-white inline-flex items-center justify-center gap-3 rounded-lg bg-orange-600 px-6 py-3.5 text-base font-bold text-white shadow-lg shadow-orange-950/20 transition hover:-translate-y-0.5 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-green-950 lg:focus:ring-offset-white">
               Join Our Cause
               <FaRegHandshake aria-hidden="true" className="text-xl" />
-            </div>
+            </a>
 
-            <div className="text-white inline-flex items-center justify-center gap-3 rounded-lg border-2 border-white/80 bg-white/10 px-6 py-3 text-base font-bold text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white hover:text-green-900 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 lg:border-green-900 lg:bg-transparent lg:text-green-900 lg:hover:bg-green-900 lg:hover:text-white">
+            <a href="#services" className="text-white inline-flex items-center justify-center gap-3 rounded-lg border-2 border-white/80 bg-white/10 px-6 py-3 text-base font-bold text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white hover:text-green-900 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 lg:border-green-900 lg:bg-transparent lg:text-green-900 lg:hover:bg-green-900 lg:hover:text-white">
               Explore Programs
               <FaArrowRight aria-hidden="true" />
-            </div>
+            </a>
           </div>
         </div>
 

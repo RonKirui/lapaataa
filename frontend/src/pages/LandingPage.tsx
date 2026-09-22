@@ -18,31 +18,31 @@ AOS.init({
 export default function Home() {
   return (
     <div className="w-full smooth-scroll">
-      <section id="home" className="smooth-mt-20">
+      <section id="home" className="scroll-mt-20 lg:scroll-mt-24">
         <Hero />
       </section>
-      <section id="about" className="-smooth-mt-100">
+      <section id="about" className="scroll-mt-20 lg:scroll-mt-24">
         <About />
       </section>
-      <section id="services" className="smooth-mt-20">
+      <section id="services" className="scroll-mt-20 lg:scroll-mt-24">
         <Services />
       </section>
-      <section id="core-values" className="smooth-mt-20">
+      <section id="core-values" className="scroll-mt-20 lg:scroll-mt-24">
         <CoreValues />
       </section>
-      <section id="banner" className="smooth-mt-20">
+      <section id="banner" className="scroll-mt-20 lg:scroll-mt-24">
         <Banner />
       </section>
-      <section id="latest-news" className="smooth-mt-20">
+      <section id="latest-news" className="scroll-mt-20 lg:scroll-mt-24">
         <LatestNews />
       </section>  
-      <section id="partnership" className="smooth-mt-20">
+      <section id="partnership" className="scroll-mt-20 lg:scroll-mt-24">
         <Partners />
       </section>
-      <section id="awards-recognition" className="smooth-mt-20">
+      <section id="awards-recognition" className="scroll-mt-20 lg:scroll-mt-24">
         <AwardsRecognition />
       </section>
-      <section id="contact" className="smooth-mt-20">
+      <section id="contact" className="scroll-mt-20 lg:scroll-mt-24">
         <Contact />
       </section>
     </div>

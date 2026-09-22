@@ -113,9 +113,9 @@ export default function NavBar() {
           <a href="#contact" className="border-green-800  hover:border-b-2 p-2">
             Contact
           </a>
-          <button className="border-green-700 whitespace-nowrap  hover:border-b-2 text-gray-100 bg-orange-600 ">
+          <a href="#contact" className="border-green-700 whitespace-nowrap px-4 py-2 rounded-lg hover:border-b-2 text-gray-100 bg-orange-600 ">
             Join Us
-          </button>
+          </a>
         </div>
         {isOpen && (
           <div className="flex lg:hidden w-full bg-gray-100 text-left flex-col gap-x-1">
