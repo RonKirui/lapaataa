@@ -469,7 +469,7 @@ function ContactDetail({ icon, label, value }: ContactDetailProps): JSX.Element 
     </div>
   );
 }
-
+{/*
 interface FooterLinksProps {
   title: string;
   links: string[];
@@ -490,7 +490,7 @@ function FooterLinks({ title, links }: FooterLinksProps): JSX.Element {
       </nav>
     </div>
   );
-}
+}*/}
 
 interface SocialLinkProps {
   href: string;

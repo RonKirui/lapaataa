@@ -1,8 +1,6 @@
 import type { JSX } from "react";
 import {
-  FaArrowRight,
   FaAward,
-  FaHandshake,
   FaTrophy,
 } from "react-icons/fa6";
 

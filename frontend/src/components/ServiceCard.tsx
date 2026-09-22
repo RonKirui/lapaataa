@@ -1,4 +1,3 @@
-import heroImage from "../assets/lapataahero.jpeg";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 import data from "../data/data.json";
