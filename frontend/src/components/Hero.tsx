@@ -66,7 +66,7 @@ export default function Hero() {
               <FaRegHandshake aria-hidden="true" className="text-xl" />
             </a>
 
-            <a href="#services" className="text-white inline-flex items-center justify-center gap-3 rounded-lg border-2 border-white/80 bg-white/10 px-6 py-3 text-base font-bold text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white hover:text-green-900 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 lg:border-green-900 lg:bg-transparent lg:text-green-900 lg:hover:bg-green-900 lg:hover:text-white">
+            <a href="#services" className="text-green-800 inline-flex items-center justify-center gap-3 rounded-lg border-2 border-white/80 bg-white/10 px-6 py-3 text-base font-bold text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white hover:text-green-900 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 lg:border-green-900 lg:bg-transparent lg:text-green-900 lg:hover:bg-green-900 lg:hover:text-white">
               Explore Programs
               <FaArrowRight aria-hidden="true" />
             </a>
